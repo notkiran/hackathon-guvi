@@ -7,6 +7,8 @@
   gap: 1rem;
   transition: all 0.1s;
   width: 650px;
+  align-items: center;
+  text-align: center;
 }
 
 body {
@@ -19,9 +21,9 @@ body {
     #de2b77
   );
   min-height: 100vh;
-  font-family: "Roboto";
-  align-content: center;
-  align-items: center;
+  font-family: "Poppins", sans-serif;
+  /* align-content: center;
+  align-items: center; */
 }
 
 .anime-container:hover {
@@ -35,4 +37,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.pg-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
