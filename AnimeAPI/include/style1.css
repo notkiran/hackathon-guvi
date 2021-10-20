@@ -8,6 +8,8 @@ body {
     #de2b77
   );
   min-height: 100vh;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 .pg-title {
@@ -21,3 +23,12 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.animeTitle:hover {
+  color: crimson;
+}
+
+.sub-title {
+  font-weight: 600;
+}
+

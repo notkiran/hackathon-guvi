@@ -1,11 +1,10 @@
 document.body.innerHTML = `
 <div class="row d-flex justify-content-center">
-<div class="col-8 col-md-6 col-lg-5 col-xl-4 col-xxl-4 pg-title text-center fw-bolder mt-4 mb-2">Anime Page- Naruto
+<div class="col-8 col-md-6 col-lg-5 col-xl-4 col-xxl-4 pg-title text-center fw-bolder mt-4 mb-2"><i class="fad fa-tv-retro"></i> Anime Page- Naruto
 </div>
 </div>
 <section class="container">
 <div class="row anime-page align-items-center justify-content-center gx-5">
-    <p>HELLO</p>
 
 </section>`;
 
@@ -27,17 +26,24 @@ async function getAnime() {
 
     animeContainer.innerHTML += `
     <div class="col-12 col-md-8 col-lg-6 m-2 p-3 bg-light rounded justify-content-center align-items-center d-md-flex">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 justify-content-center d-grid d-md-block">
     <img src="${anime.image_url}"/>
     </div>
     <div class="col-12 col-md-6">
-    <p>Title: <span>${anime.title}</span></p>
-    <p>Type: <span>${anime.type}</span></p>
-    <p>Start Date: <span>${dateStart}</span></p>
-    <p>End Date: <span>${dateEnd}</span></p>
-    <p>Epipsodes: <span>${anime.episodes}</span></p>
-    <p>IMDB Rating: <span>${anime.score}<IMDB RAting:/span></p>
-    <a href="${anime.url}" target="_blank" type="button" class="btn btn-primary">Details</a>
+    <div class="row justify-content-center d-grid d-md-block">
+    <div class="col-12 fw-bold fs-3">
+    <p><i class="fad fa-play"></i> Title: <span class="animeTitle">${anime.title}</span></p>
+    </div>
+    <p><i class="fas fa-camera-movie"></i> <span class="sub-title">Type: </span><span>${anime.type}</span></p>
+    <p><i class="fad fa-calendar-check"></i> <span class="sub-title">Start Date: </span><span>${dateStart}</span></p>
+    <p><i class="fad fa-calendar-times"></i> <span class="sub-title">End Date: </span><span>${dateEnd}</span></p>
+    <p><i class="fad fa-film"></i> <span class="sub-title">Episodes: </span><span>${anime.episodes}</span></p>
+    <p><i class="fad fa-registered"></i> <span class="sub-title">Rated: </span><span>${anime.rated}</span></p>
+    <p><i class="fas fa-star-half-alt"></i> <span class="sub-title">IMDB Rating: </span><span>${anime.score}<IMDB Score:/span></p>
+    <div class="d-grid d-md-block">
+    <a href="${anime.url}" target="_blank" type="button" class="btn btn-primary"><i class="fad fa-angle-double-right"></i> More Details <i class="fad fa-external-link"></i></a>
+    </div>
+    </div>
     </div>
     </div>
   `;
