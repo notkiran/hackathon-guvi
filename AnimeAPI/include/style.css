@@ -1,16 +1,3 @@
-.anime-container {
-  background-color: white;
-  margin: 2rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  gap: 1rem;
-  transition: all 0.1s;
-  width: 650px;
-  align-items: center;
-  text-align: center;
-}
-
 body {
   background-image: linear-gradient(
     to right top,
@@ -21,22 +8,8 @@ body {
     #de2b77
   );
   min-height: 100vh;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
-  /* align-content: center;
-  align-items: center; */
-}
-
-.anime-container:hover {
-  transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .pg-title {
@@ -50,3 +23,12 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.animeTitle:hover {
+  color: crimson;
+}
+
+.sub-title {
+  font-weight: 600;
+}
+
