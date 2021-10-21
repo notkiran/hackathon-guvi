@@ -8,7 +8,8 @@ body {
     #de2b77
   );
   min-height: 100vh;
-  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
   font-family: "Poppins", sans-serif;
 }
 
@@ -32,3 +33,17 @@ body {
   font-weight: 600;
 }
 
+.anim-box {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 767px) {
+  .t-c {
+    text-align: center;
+  }
+}

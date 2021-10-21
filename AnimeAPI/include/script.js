@@ -31,12 +31,12 @@ async function getAnime() {
         col-12 col-md-8 col-lg-6
         m-2
         p-3
-        bg-light
         rounded
         justify-content-center
         align-items-center
         d-md-flex
         flex-column
+        anim-box
       "
     >
       <div class="row justify-content-center align-items-center d-flex">
@@ -52,7 +52,7 @@ async function getAnime() {
           <img src="${anime.image_url}" />
         </div>
         <div class="col-12 col-md-6">
-          <div class="row justify-content-center d-flex">
+          <div class="row justify-content-center d-flex t-c">
             <p>
               <i class="fas fa-camera-movie"></i>
               <span class="sub-title">Type: </span><span>${anime.type}</span>
