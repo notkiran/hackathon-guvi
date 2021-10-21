@@ -28,7 +28,7 @@ async function getAnime() {
 
 <div
       class="
-        col-12 col-md-8 col-lg-6
+  ]     col-12 col-md-10 col-lg-8 col-xl-6
         m-2
         p-3
         rounded
@@ -49,7 +49,7 @@ async function getAnime() {
       </div>
       <div class="row justify-content-center align-items-center d-flex">
         <div class="col-12 col-md-6 justify-content-center d-flex">
-          <img src="${anime.image_url}" />
+          <img class="p-2 bg-info rounded" src="${anime.image_url}" />
         </div>
         <div class="col-12 col-md-6">
           <div class="row justify-content-center d-flex t-c">
